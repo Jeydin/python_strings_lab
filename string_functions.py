@@ -15,13 +15,21 @@ def substring(x, y, z):
 	print(fish)
 substring("alligator", 3, 8)
 
-def lastFirst(x):
+def last_first(x):
 	space = x.find(" ")
 	chicken = space + 1
 	firstName = x[0:space]
 	lastName = x[chicken:]
 	print(lastName + ", " + firstName)
-lastFirst("James Bond")
+last_first("James Bond")
+
+def first_last(x):
+	comma = x.find(",")
+	space = comma + 2
+	last = x[0:comma]
+	first = x[space:]
+	print(first + " " + last)
+first_last("Bond, James")
 
 def replaceString(x, y, z):
 	chicken = x[:x.find(y)]
