@@ -21,6 +21,7 @@ def last_first(x):
 	firstName = x[0:space]
 	lastName = x[chicken:]
 	print(lastName + ", " + firstName)
+
 last_first("James Bond")
 
 def first_last(x):
@@ -29,6 +30,7 @@ def first_last(x):
 	last = x[0:comma]
 	first = x[space:]
 	print(first + " " + last)
+
 first_last("Bond, James")
 
 def replaceString(x, y, z):
@@ -36,4 +38,5 @@ def replaceString(x, y, z):
 	egg = len(chicken) + len(y)
 	fish = x[egg:]
 	print(chicken + z + fish)
+	
 replaceString("Computer science is fun.", "science", "programming")
